@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arrosticini classici — La Tradizione Continua</title>
+<meta name="description" content="Arrosticini di pecora filati a mano. Prezzo al chilo, pezzatura indicativa, si paga sul peso reale. Spediti freschi o da congelare.">
+<meta name="theme-color" content="#C4161C">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arrosticini classici — La Tradizione Continua">
+<meta property="og:image" content="https://webinal.github.io/tradizione-sito/img/og.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="fonts-inline.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="anteprima"><b>Anteprima del sito</b> · testi, prezzi e immagini sono da definire insieme al negozio</div>
+
+<header class="nav compact" id="nav"><div class="wrap"><div class="row">
+  <a class="brand" href="index.html">
+    <img src="img/logo.webp" alt="La Tradizione Continua, Macelleria da Paglione">
+    <span class="nome">La Tradizione<br>Continua<small>Macelleria da Paglione</small></span>
+  </a>
+  <nav class="links" id="links">
+    <a href="prodotti.html">Prodotti</a>
+    <a href="box.html">Box</a>
+    <a href="storia.html">Storia</a>
+    <a href="spedizioni.html">Spedizioni</a>
+    <a href="index.html#dove">Dove siamo</a>
+  </nav>
+  <a class="btn cta" href="prenota.html">Prenota e ritira</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></div></header>
+
+<div class="wrap" style="padding-top:22px"><div class="crumbs"><a href="index.html">Home</a> · <a href="prodotti.html">Prodotti</a> · <a href="prodotti.html#arrosticini">Arrosticini</a> · Classici</div></div>
+
+<section class="wrap"><div class="pdp">
+  <div class="gal rev">
+    <div class="main"><img id="main" src="img/brace.webp" alt="Arrosticini classici sulla brace"></div>
+    <div class="thumbs">
+      <img src="img/brace.webp" alt="Sulla brace" onclick="document.getElementById('main').src=this.src">
+      <img src="img/arrosticini.webp" alt="La confezione" onclick="document.getElementById('main').src=this.src">
+      <img src="img/lamb.webp" alt="La carne di pecora" onclick="document.getElementById('main').src=this.src">
+      <img src="img/hero-hands.webp" alt="Filati a mano" onclick="document.getElementById('main').src=this.src">
+    </div>
+  </div>
+  <div class="info rev">
+    <div class="badge">Spedibile · fresco o da congelare</div>
+    <h1>Arrosticini<br>classici</h1>
+    <div class="prezzo">da 78€ <small>· 100 pezzi, circa 2 kg</small></div>
+    <p class="desc">I cippitill come li facciamo da tre generazioni. Solo pecora, tagliata e infilata a mano, uno per uno, la mattina della spedizione. Niente glutine, niente conservanti.</p>
+
+    <div class="peso-box">
+      <div class="t">Come funziona il peso</div>
+      <p>Il prezzo è al chilo. La pezzatura è indicativa, perché la carne non pesa mai uguale: alla preparazione pesiamo la confezione vera e il conto si aggiusta sul peso reale. Mai una sorpresa: te lo diciamo prima di spedire.</p>
+    </div>
+
+    <div class="qty-row">
+      <div class="qty"><button type="button" onclick="q(-1)">−</button><span id="q">1</span><button type="button" onclick="q(1)">+</button></div>
+      <button class="btn" type="button" onclick="return false">Aggiungi <span class="arr">→</span></button>
+    </div>
+    <div class="disclaim">Anteprima: il carrello e i pagamenti si attivano quando decidiamo insieme come vendere online.</div>
+
+    <div style="margin-top:26px;display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--g600)">
+      <span>· Filati a mano</span><span>· Consegna 24–48h</span><span>· Solo carne di pecora</span>
+    </div>
+  </div>
+</div></section>
+
+<section class="split"><div class="wrap" style="display:contents"></div></section>
+<section class="arrostsec" style="padding:0"><div class="wrap"><div class="arrostsec-in">
+  <div class="txt rev">
+    <div class="n">Il consiglio del banco</div>
+    <h2>La brace,<br>non la padella.</h2>
+    <p>Fuoco vivo, girarli spesso, sale alla fine. Otto minuti e sono pronti. Se li hai congelati, non serve scongelarli: vanno diretti sulla brace.</p>
+    <div class="actions"><a class="btn on-dark ghost" href="ricette.html">Come si cuociono <span class="arr">→</span></a></div>
+  </div>
+</div></div>
+<div class="foto" style="position:relative;height:clamp(300px,32vw,460px)"><img class="ph" src="img/brace.webp" alt="Arrosticini sulla brace"></div>
+</section>
+
+<!-- cross-sell -->
+<section class="sec" style="padding-top:clamp(48px,7vw,90px)"><div class="wrap">
+  <div class="sechead"><div class="l"><div class="n lab">Va bene anche</div><h2>Chi prende questi, prende anche</h2></div></div>
+  <div class="boxgrid rev">
+    <article class="boxcard"><div class="im"><img class="ph" src="img/brace.webp" alt="La Braciata"><span class="sigillo">Per otto</span></div>
+      <div class="body"><h3>La Braciata</h3><p class="desc">La griglia completa, già porzionata. Arrosticini, salsicce e spiedini.</p>
+        <div class="foot"><span class="prezzo">da 48€</span><a class="link-arr" href="box.html">Vedi la box <span class="arr">→</span></a></div></div></article>
+    <article class="boxcard"><div class="im"><img class="ph" src="img/conserve.webp" alt="Ragù"><span class="sigillo">Dispensa</span></div>
+      <div class="body"><h3>Ragù di casa</h3><p class="desc">Il barattolo che salva la cena. Cotto lento, come si deve.</p>
+        <div class="foot"><span class="prezzo">da 9€</span><a class="link-arr" href="prodotti.html#dispensa">Vedi <span class="arr">→</span></a></div></div></article>
+    <article class="boxcard"><div class="im"><img class="ph" src="img/beef.webp" alt="Tagliata"><span class="sigillo">Al taglio</span></div>
+      <div class="body"><h3>Tagliata</h3><p class="desc">Manzo nostrano frollato il giusto, sottovuoto per il viaggio.</p>
+        <div class="foot"><span class="prezzo">28€/kg</span><a class="link-arr" href="prodotti.html#sottovuoto">Vedi <span class="arr">→</span></a></div></div></article>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="wrap">
+  <div class="top">
+    <div class="brand"><img src="img/logo.webp" alt="La Tradizione Continua"><p>La macelleria di famiglia a Montesilvano. Carne che passa di mano, non di magazzino.</p></div>
+    <div><h4>Il negozio</h4><ul><li><a href="prodotti.html">Prodotti</a></li><li><a href="box.html">Box curate</a></li><li><a href="prenota.html">Prenota e ritira</a></li><li><a href="spedizioni.html">Spedizioni</a></li></ul></div>
+    <div><h4>La bottega</h4><ul><li><a href="storia.html">La nostra storia</a></li><li><a href="ricette.html">Ricette</a></li><li><a href="index.html#dove">Dove siamo</a></li></ul></div>
+  </div>
+  <div class="bott"><span>© La Tradizione Continua · Macelleria da Paglione · Montesilvano (PE)</span><span class="fp">Chiama, rispondiamo noi. — Paglione</span></div>
+</div></footer>
+
+<script>function q(d){var e=document.getElementById('q');var n=Math.max(1,(parseInt(e.textContent,10)||1)+d);e.textContent=n;}</script>
+<script src="app.js"></script>
+</body>
+</html>

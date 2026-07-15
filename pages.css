@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Sottopagine — La Tradizione Continua. Clona il design system di styles.css.
+   ========================================================================== */
+
+/* intestazione pagina */
+.phead{padding:clamp(46px,7vw,92px) 0 clamp(28px,4vw,48px);border-bottom:1px solid var(--g200)}
+.phead .kick{color:var(--rosso);margin-bottom:16px}
+.phead h1{font-family:var(--hero);font-weight:400;text-transform:uppercase;line-height:.95;font-size:clamp(40px,6vw,82px)}
+.phead .lead{margin-top:20px;font-size:clamp(16px,1.5vw,19px);color:var(--g700);max-width:48ch}
+.crumbs{font-size:12px;letter-spacing:.08em;color:var(--g400);margin-bottom:18px;text-transform:uppercase}
+.crumbs a{color:var(--g600)}
+.crumbs a:hover{color:var(--rosso)}
+
+/* nav categorie (shop) */
+.catnav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--g200)}
+.catnav .row2{display:flex;gap:8px;padding:14px 0;overflow-x:auto}
+.catnav a{white-space:nowrap;font-weight:600;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;padding:9px 15px;color:var(--g700);border:1.5px solid var(--g200)}
+.catnav a:hover{background:var(--nero);color:#fff;border-color:var(--nero)}
+
+/* catalogo */
+.catsec{padding:clamp(42px,6vw,78px) 0 0}
+.catsec .chead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+.catsec .chead h2{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.4vw,44px);line-height:.98}
+.catsec .chead .n{color:var(--rosso);margin-bottom:10px}
+.catsec .chead .r{font-size:14.5px;color:var(--g600);max-width:34ch}
+.prodgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--g200);border:1px solid var(--g200)}
+.prodcard{background:#fff;display:flex;flex-direction:column}
+.prodcard .im{position:relative;aspect-ratio:1/1;overflow:hidden}
+.prodcard .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.prodcard:hover .im img{transform:scale(1.06)}
+.prodcard .badge{position:absolute;top:10px;left:10px;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:5px 9px;background:#fff;color:var(--nero)}
+.prodcard .badge.sped{background:var(--rosso);color:#fff}
+.prodcard .body{padding:18px;display:flex;flex-direction:column;flex:1}
+.prodcard h3{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:20px;line-height:1}
+.prodcard .d{margin-top:8px;font-size:13.5px;color:var(--g600);flex:1}
+.prodcard .foot{margin-top:16px;display:flex;align-items:center;justify-content:space-between}
+.prodcard .prezzo{font-family:var(--hero);font-size:20px}
+.prodcard .prezzo small{font-family:var(--ui);font-weight:500;font-size:11px;color:var(--g600);letter-spacing:.03em}
+@media(max-width:1100px){.prodgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.prodgrid{grid-template-columns:1fr 1fr}}
+
+/* scheda prodotto */
+.pdp{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);padding:clamp(30px,4vw,54px) 0}
+.pdp .gal .main{aspect-ratio:1/1;overflow:hidden;background:var(--carbone)}
+.pdp .gal .main img{width:100%;height:100%;object-fit:cover}
+.pdp .gal .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}
+.pdp .gal .thumbs img{aspect-ratio:1/1;object-fit:cover;cursor:pointer;border:1px solid var(--g200)}
+.pdp .info .badge{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rosso)}
+.pdp .info h1{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(32px,4vw,54px);line-height:.98;margin-top:10px}
+.pdp .info .prezzo{margin-top:16px;font-family:var(--hero);font-size:34px}
+.pdp .info .prezzo small{font-family:var(--ui);font-weight:500;font-size:14px;color:var(--g600);letter-spacing:.03em}
+.pdp .info p.desc{margin-top:18px;font-size:16px;color:var(--g700);max-width:44ch}
+.peso-box{margin-top:22px;border:1.5px solid var(--g200);padding:18px 20px;background:var(--panna)}
+.peso-box .t{font-family:var(--ui);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--rosso)}
+.peso-box p{margin-top:8px;font-size:14px;color:var(--g700)}
+.qty-row{margin-top:24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qty{display:flex;align-items:center;border:1.5px solid var(--nero)}
+.qty button{width:44px;height:48px;background:none;border:0;font-size:20px;cursor:pointer;font-family:var(--hero);color:var(--nero)}
+.qty span{width:46px;text-align:center;font-weight:600;font-variant-numeric:tabular-nums}
+.pdp .disclaim{margin-top:14px;font-size:12.5px;color:var(--g400)}
+@media(max-width:860px){.pdp{grid-template-columns:1fr}}
+
+/* passi numerati */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--g200);border:1px solid var(--g200)}
+.step{background:#fff;padding:28px 24px}
+.step .k{font-family:var(--hero);color:var(--rosso);font-size:26px}
+.step h3{font-family:var(--ui);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:14px;margin-top:12px}
+.step p{margin-top:9px;font-size:14.5px;color:var(--g700)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* form mostrato (non transazionale) */
+.formcard{max-width:640px;border:1px solid var(--g200)}
+.formcard .hd{background:var(--nero);color:#fff;padding:16px 22px;font-family:var(--hero);text-transform:uppercase;font-size:16px}
+.formcard .bd{padding:24px 22px;display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field label{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--g600)}
+.field input,.field select,.field textarea{border:1.5px solid var(--g200);background:#fff;padding:13px 14px;font-family:var(--ui);font-size:15px;color:var(--nero)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--rosso);outline-offset:-1px;border-color:var(--rosso)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+
+/* storia lunga */
+.longread{max-width:720px;margin:0 auto;padding:clamp(40px,6vw,78px) 0}
+.longread p{font-size:18px;line-height:1.72;color:var(--g700);margin-bottom:22px}
+.longread p.lead{font-size:clamp(20px,2.2vw,26px);color:var(--nero);line-height:1.45}
+.longread h2{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(24px,3vw,38px);margin:40px 0 14px;line-height:1}
+.longread figure{margin:34px 0}
+.longread figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.longread figcaption{margin-top:10px;font-size:13px;color:var(--g400)}
+.gen{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--g200);border:1px solid var(--g200);margin:34px 0}
+.gen .g{background:#fff;padding:24px 20px}
+.gen .g .k{font-family:var(--hero);color:var(--rosso);font-size:22px}
+.gen .g h3{font-family:var(--ui);font-weight:600;text-transform:uppercase;font-size:13px;letter-spacing:.05em;margin-top:8px}
+.gen .g p{font-size:13.5px;color:var(--g600);margin-top:8px}
+@media(max-width:700px){.gen{grid-template-columns:1fr}}
+
+/* ricette */
+.ricgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,30px)}
+.ric{border:1px solid var(--g200);display:flex;flex-direction:column}
+.ric .im{aspect-ratio:4/3;overflow:hidden}
+.ric .im img{width:100%;height:100%;object-fit:cover}
+.ric .bd{padding:22px}
+.ric h3{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:22px;line-height:1}
+.ric .meta{margin-top:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--rosso)}
+.ric ol{margin-top:14px;padding-left:18px;font-size:14.5px;color:var(--g700);line-height:1.55}
+.ric ol li{margin-bottom:8px}
+@media(max-width:900px){.ricgrid{grid-template-columns:1fr}}
+
+/* banda invito a fondo pagina */
+.ctaband{background:var(--panna);border-top:1px solid var(--g200);border-bottom:1px solid var(--g200)}
+.ctaband .in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(36px,5vw,64px) 0;flex-wrap:wrap}
+.ctaband h2{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.4vw,44px);line-height:.98;max-width:20ch}
+
+/* stretta di due colonne testo+foto per pagine racconto */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;padding:clamp(44px,6vw,84px) 0}
+.split .im{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--carbone)}
+.split .im img{width:100%;height:100%;object-fit:cover}
+.split h2{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(28px,3.6vw,48px);line-height:.98}
+.split p{margin-top:18px;font-size:16px;color:var(--g700);max-width:44ch}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
