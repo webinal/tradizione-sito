@@ -56,14 +56,14 @@ a{color:inherit;text-decoration:none}
 .nav .brand img{height:52px;width:auto;mix-blend-mode:multiply;transition:height .3s var(--ease)}
 .nav.compact .brand img{height:40px}
 .nav .brand .nome{font-family:var(--hero);font-size:15px;text-transform:uppercase;line-height:.95;color:var(--nero)}
-.nav .brand .nome small{display:block;font-family:var(--ui);font-weight:600;font-size:9.5px;letter-spacing:.14em;color:var(--rosso)}
+.nav .brand .nome small{display:block;margin-top:4px;font-family:var(--ui);font-weight:600;font-size:9.5px;letter-spacing:.14em;color:var(--rosso)}
 .nav .links{display:flex;gap:22px;align-items:center}
 .nav .links a{font-weight:500;font-size:14.5px;color:var(--g700);position:relative;padding:4px 0}
 .nav .links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--rosso);transition:width .25s var(--ease)}
 .nav .links a:hover{color:var(--nero)}
 .nav .links a:hover::after{width:100%}
 .nav .cta{margin-left:6px}
-.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger{display:none;position:relative;z-index:55;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
 .burger span{width:26px;height:2px;background:var(--nero);transition:.3s var(--ease)}
 
 /* ===================== HERO — banco-sipario ===================== */
@@ -201,9 +201,10 @@ a{color:inherit;text-decoration:none}
 
 /* ===================== RESPONSIVE ===================== */
 @media(max-width:960px){
+  .nav{backdrop-filter:none;background:var(--bianco)}
   .nav .links{display:none}
-  .nav .links.open{display:flex;position:fixed;inset:0;top:0;background:var(--bianco);flex-direction:column;justify-content:center;
-    gap:26px;padding:40px;font-size:22px}
+  .nav .links.open{display:flex;position:fixed;inset:0;top:0;z-index:45;background:var(--bianco);flex-direction:column;justify-content:center;
+    align-items:center;text-align:center;gap:26px;padding:40px;font-size:22px}
   .nav .links.open a{font-size:24px;font-family:var(--hero);text-transform:uppercase}
   .nav .cta{display:none}
   .burger{display:flex;order:3}
