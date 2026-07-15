@@ -23,8 +23,8 @@
 .catsec .chead h2{font-family:var(--hero);font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.4vw,44px);line-height:.98}
 .catsec .chead .n{color:var(--rosso);margin-bottom:10px}
 .catsec .chead .r{font-size:14.5px;color:var(--g600);max-width:34ch}
-.prodgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--g200);border:1px solid var(--g200)}
-.prodcard{background:#fff;display:flex;flex-direction:column}
+.prodgrid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-top:1px solid var(--g200);border-left:1px solid var(--g200)}
+.prodcard{background:#fff;display:flex;flex-direction:column;border-right:1px solid var(--g200);border-bottom:1px solid var(--g200)}
 .prodcard .im{position:relative;aspect-ratio:1/1;overflow:hidden}
 .prodcard .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
 .prodcard:hover .im img{transform:scale(1.06)}
@@ -36,8 +36,8 @@
 .prodcard .foot{margin-top:16px;display:flex;align-items:center;justify-content:space-between}
 .prodcard .prezzo{font-family:var(--hero);font-size:20px}
 .prodcard .prezzo small{font-family:var(--ui);font-weight:500;font-size:11px;color:var(--g600);letter-spacing:.03em}
-@media(max-width:1100px){.prodgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:760px){.prodgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:1100px){.prodgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:440px){.prodgrid{grid-template-columns:1fr}}
 
 /* scheda prodotto */
 .pdp{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);padding:clamp(30px,4vw,54px) 0}
